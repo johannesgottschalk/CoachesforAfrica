@@ -17,6 +17,7 @@
                 <li><a href="impressum.html">Impressum</a></li>
                 <li><a href="datenschutz.html">Datenschutz</a></li>
             </ul>
+            <button id="buttonLang" onclick="languageToggle()">English</button>
         </nav>
     </header>
     <main>
@@ -34,7 +35,7 @@
         </aside>
         <article>
             <div class="container">
-                <div class="column-1 box">
+                <div id="german" class="column-1 box">
                     <h1>Warum Afrika?</h1>
                     <br/>
                     <p>
@@ -87,7 +88,7 @@
                     </p>
                     <br/>
                 </div>
-                <div class="column-2 box">
+                <div id="english" class="column-1 box" style="display: none;">
                     <h1>Why Africa?</h1>
                     <br/>
                     <p>
@@ -148,4 +149,22 @@
             <img src="img/Footer.png">
         </nav>
     </footer>
+    <script>
+        function languageToggle() {
+            var lang = document.getElementById("english");
+            if(lang.style.display === "none") {
+                lang.style.display = "block";
+                var ger = document.getElementById("german")
+                ger.style.display = "none"
+                document.getElementById('buttonLang').textContent = "Deutsch";
+
+
+            } else {
+                lang.style.display = "none";
+                var ger = document.getElementById("german")
+                ger.style.display = "block"
+                document.getElementById('buttonLang').textContent = "English";
+            }
+        }
+    </script>
 </body>

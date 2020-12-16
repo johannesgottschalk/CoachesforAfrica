@@ -43,6 +43,11 @@ nav > ul > li {
     margin: 0 5px 0 5px;
 }
 
+nav > button {
+    float: right;
+    
+}
+
 main {
     display: block;
     padding-top: 3em;
@@ -79,7 +84,7 @@ aside > ul > li > img {
 
 .column-1 {
   flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
-  flex-basis: 45%; /* sets initial width to 70% */
+  flex-basis: 90%; /* sets initial width to 70% */
 }
 
 .box {
